@@ -150,6 +150,8 @@ body {
     width: 200px;
     overflow-y: auto;
     padding: 5px;
+    direction: rtl; 
+    text-align: left;
 }
 
 
