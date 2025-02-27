@@ -131,12 +131,13 @@ body {
     color: white;
     padding: 8px 19px;
     border: none;
-    margin-top: 40px ;
+    margin-top: 40px;
     border-radius: 5px;
 }
-.donation-button:focus + .dropdown-content,
-.donation-button:active + .dropdown-content {
-    display: block; 
+
+.donation-button:focus+.dropdown-content,
+.donation-button:active+.dropdown-content {
+    display: block;
 }
 
 .dropdown-content {
@@ -146,13 +147,31 @@ body {
     border: 1px solid #ccc;
     z-index: 1;
     max-height: 200px;
-    width:250px ;
+    width: 200px;
     overflow-y: auto;
     padding: 5px;
-    left: 0;
-    right: auto;
 }
-.dropdown-options{
+
+
+.dropdown-content::-webkit-scrollbar {
+    width: 10px; 
+}
+
+.dropdown-content::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px; 
+}
+
+.dropdown-content::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.dropdown-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px; 
+}
+
+.dropdown-options {
     display: flex;
     flex-direction: column;
 }
@@ -161,15 +180,19 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.dropdown-section,.checkbox-section{
+
+.dropdown-section,
+.checkbox-section {
     background: #EAEAEA;
     border-radius: 10px;
     margin-bottom: 5px;
-    padding: 5px 10px;
+    padding: 3px 10px;
 }
-.option-dropdown{
+
+.option-dropdown {
     padding: 10px 5px;
 }
-.option-dropdown:active{
+
+.option-dropdown:active {
     background: #fff;
 }
