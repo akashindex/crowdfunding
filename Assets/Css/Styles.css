@@ -190,6 +190,11 @@ body {
     margin-bottom: 5px;
     padding: 3px 10px;
 }
+.checkboxs-options{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
 
 .option-dropdown {
     padding: 10px 5px;
